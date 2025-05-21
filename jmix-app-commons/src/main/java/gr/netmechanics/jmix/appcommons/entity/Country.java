@@ -283,7 +283,7 @@ public enum Country implements EnumClass<String>, EnumSortLocalized {
     @Nullable
     public static Country fromId(final String id) {
         for (Country c : Country.values()) {
-            if (c.getId().equals(id)) {
+            if (c.getId().equalsIgnoreCase(id)) {
                 return c;
             }
         }

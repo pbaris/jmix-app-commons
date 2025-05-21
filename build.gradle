@@ -45,13 +45,15 @@ subprojects {
 
     publishing {
         repositories {
-            maven {
-                url = 'https://myrepo/releases/'
-                credentials {
-                    username rootProject.hasProperty('uploadUser') ? rootProject['uploadUser'] : 'admin'
-                    password rootProject.hasProperty('uploadPassword') ? rootProject['uploadPassword'] : 'admin'
+            if (project.hasProperty("nexus_username")) {
+                maven {
+                    name = "NetmechanicsPublicNexus"
+                    url = 'https://nexus.nmlabs.gr/repository/m2public/'
+                    credentials {
+                        username = "${nexus_username}"
+                        password = "${nexus_password}"
+                    }
                 }
-                allowInsecureProtocol = true
             }
         }
         publications {

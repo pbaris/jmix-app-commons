@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * @author Panos Bariamis (pbaris)
  */
 @Component("jac_OnDeleteInverseDenyExceptionHandler")
-@ConditionalOnProperty(name = "jmix.appcommons.on-delete-inverse-deny-exception-handler.active", matchIfMissing = true)
+@ConditionalOnProperty(name = "jmix.appcommons.on-delete-inverse-deny-exception-handler.enabled", matchIfMissing = true)
 public class OnDeleteInverseDenyExceptionHandler extends AbstractUiExceptionHandler {
 
     private final Notifications notifications;
