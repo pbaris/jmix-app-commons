@@ -29,5 +29,3 @@ implementation 'gr.netmechanics.jmix:azurefs-starter:<addon-version>'
 ## Usage
 
 Learn more about its capabilities in the [Wiki](https://github.com/pbaris/jmix-app-commons/wiki).
-
-[Wiki Contents](https://github.com/pbaris/jmix-app-commons/wiki/_Sidebar.md)
