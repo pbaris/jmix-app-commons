@@ -20,8 +20,8 @@ public class TagsRenderer<T extends HasTags> extends ComponentRenderer<Component
 
     @Override
     public Component createComponent(final T item) {
-        if (item.getTagsValues() != null) {
-            String tags = item.getTagsValues().stream()
+        if (item.getTagValues() != null) {
+            String tags = item.getTagValues().stream()
                 .sorted()
                 .collect(Collectors.joining("</span> <span class=\"ms-xs\" theme=\"badge small contrast\">"));
 
