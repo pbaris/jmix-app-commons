@@ -20,12 +20,14 @@ public class TagsRenderer<T extends HasTags> extends ComponentRenderer<Component
 
     @Override
     public Component createComponent(final T item) {
-        String tags = item.getTags().stream()
-            .sorted()
-            .collect(Collectors.joining("</span> <span class=\"ms-xs\" theme=\"badge small contrast\">"));
+        if (item.getTags() != null) {
+            String tags = item.getTags().stream()
+                .sorted()
+                .collect(Collectors.joining("</span> <span class=\"ms-xs\" theme=\"badge small contrast\">"));
 
-        if (StringUtils.isNotBlank(tags)) {
-            return new Html("<div><span class=\"ms-xs\" theme=\"badge small contrast\">" + tags + "</span></div>");
+            if (StringUtils.isNotBlank(tags)) {
+                return new Html("<div><span class=\"ms-xs\" theme=\"badge small contrast\">" + tags + "</span></div>");
+            }
         }
 
         return new Html("<div></div>");

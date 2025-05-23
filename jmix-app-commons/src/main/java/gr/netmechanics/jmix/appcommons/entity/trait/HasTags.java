@@ -1,11 +1,11 @@
 package gr.netmechanics.jmix.appcommons.entity.trait;
 
-import java.util.Set;
+import java.util.Collection;
 
 /**
  *  @author Panos Bariamis (pbaris)
  */
 public interface HasTags {
 
-    Set<String> getTags();
+    Collection<String> getTags();
 }
