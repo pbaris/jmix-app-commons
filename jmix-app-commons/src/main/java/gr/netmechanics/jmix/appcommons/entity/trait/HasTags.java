@@ -7,5 +7,5 @@ import java.util.Collection;
  */
 public interface HasTags {
 
-    Collection<String> getTags();
+    Collection<String> getTagsValues();
 }

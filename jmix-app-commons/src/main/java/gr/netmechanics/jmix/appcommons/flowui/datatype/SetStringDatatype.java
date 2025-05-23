@@ -3,7 +3,6 @@ package gr.netmechanics.jmix.appcommons.flowui.datatype;
 import java.text.ParseException;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -18,7 +17,7 @@ import org.springframework.lang.Nullable;
 /**
  * @author Panos Bariamis (pbaris)
  */
-@DatatypeDef(id = "setString", javaClass = List.class)
+@DatatypeDef(id = "setString", javaClass = Set.class)
 @Ddl("varchar")
 public class SetStringDatatype implements Datatype<Set<String>>  {
 
