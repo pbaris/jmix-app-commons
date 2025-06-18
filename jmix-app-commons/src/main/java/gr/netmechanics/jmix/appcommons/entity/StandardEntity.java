@@ -1,6 +1,6 @@
 package gr.netmechanics.jmix.appcommons.entity;
 
-import java.time.OffsetDateTime;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
@@ -36,7 +36,7 @@ public class StandardEntity {
 
     @CreatedDate
     @Column(name = "CREATED_DATE")
-    private OffsetDateTime createdDate;
+    private LocalDateTime createdDate;
 
     @LastModifiedBy
     @Column(name = "LAST_MODIFIED_BY")
@@ -44,6 +44,6 @@ public class StandardEntity {
 
     @LastModifiedDate
     @Column(name = "LAST_MODIFIED_DATE")
-    private OffsetDateTime lastModifiedDate;
+    private LocalDateTime lastModifiedDate;
 
 }

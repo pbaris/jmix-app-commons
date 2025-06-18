@@ -24,23 +24,4 @@ import org.springframework.context.annotation.PropertySource;
 @MessageSourceBasenames("gr/netmechanics/jmix/appcommons/countries_messages")
 public class JmixAppCommonsConfiguration {
 
-    //TODO do we need this?
-    @Bean("jac_JacViewControllers")
-    public ViewControllersConfiguration screens(final ApplicationContext applicationContext,
-                                                final AnnotationScanMetadataReaderFactory metadataReaderFactory) {
-        final ViewControllersConfiguration viewControllers
-                = new ViewControllersConfiguration(applicationContext, metadataReaderFactory);
-        viewControllers.setBasePackages(Collections.singletonList("gr.netmechanics.jmix.appcommons"));
-        return viewControllers;
-    }
-
-    //TODO do we need this?
-    @Bean("jac_JacActions")
-    public ActionsConfiguration actions(final ApplicationContext applicationContext,
-                                        final AnnotationScanMetadataReaderFactory metadataReaderFactory) {
-        final ActionsConfiguration actions
-                = new ActionsConfiguration(applicationContext, metadataReaderFactory);
-        actions.setBasePackages(Collections.singletonList("gr.netmechanics.jmix.appcommons"));
-        return actions;
-    }
 }

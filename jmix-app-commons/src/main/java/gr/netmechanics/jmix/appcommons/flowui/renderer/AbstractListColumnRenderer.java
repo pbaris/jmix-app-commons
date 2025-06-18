@@ -17,18 +17,17 @@ import io.jmix.flowui.view.MessageBundle;
 /**
  * @author Panos Bariamis (pbaris)
  */
-//TODO finish it
 public abstract class AbstractListColumnRenderer<T, E extends HasListColumnLabel> extends ComponentRenderer<Component, T> {
 
-    private final MessageBundle messageBundle;
     private final Dialogs dialogs;
     private final String messagePrefix;
+    private final MessageBundle messageBundle;
 
-    protected AbstractListColumnRenderer(final String messagePrefix) {
+    protected AbstractListColumnRenderer(final String messagePrefix, final MessageBundle messageBundle, final Dialogs dialogs) {
         super((SerializableSupplier<Component>) null);
-        this.messageBundle = null;//AppBeans.getBean(MessageBundle.class);
+        this.messageBundle = messageBundle;
         this.messageBundle.setMessageGroup(getClass().getPackageName());
-        this.dialogs = null;//AppBeans.getBean(Dialogs.class);
+        this.dialogs = dialogs;
         this.messagePrefix = messagePrefix;
     }
 
