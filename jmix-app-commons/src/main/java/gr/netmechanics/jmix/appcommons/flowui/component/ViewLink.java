@@ -67,7 +67,7 @@ public class ViewLink extends Composite<RouterLink> implements ApplicationContex
     }
 
     public void setText(final String text) {
-        getContent().add(new Span(text));
+        layout.add(new Span(text));
     }
 
     public void setViewId(final String viewId) {
