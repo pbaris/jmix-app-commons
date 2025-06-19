@@ -3,6 +3,7 @@ package gr.netmechanics.jmix.appcommons.flowui.kit;
 import static io.jmix.flowui.kit.meta.StudioProperty.Category.GENERAL;
 import static io.jmix.flowui.kit.meta.StudioProperty.Category.LOOK_AND_FEEL;
 import static io.jmix.flowui.kit.meta.StudioProperty.Category.POSITION;
+import static io.jmix.flowui.kit.meta.StudioProperty.Category.SIZE;
 
 import gr.netmechanics.jmix.appcommons.flowui.component.ViewLink;
 import io.jmix.flowui.kit.meta.StudioComponent;
@@ -33,6 +34,7 @@ public interface StudioComponents {
             @StudioProperty(xmlAttribute = "colspan", category = POSITION, type = StudioPropertyType.INTEGER),
             @StudioProperty(xmlAttribute = "icon", category = LOOK_AND_FEEL, type = StudioPropertyType.ICON),
             @StudioProperty(xmlAttribute = "id", category = GENERAL, type = StudioPropertyType.COMPONENT_ID),
+            @StudioProperty(xmlAttribute = "size", category = SIZE, type = StudioPropertyType.SIZE),
             @StudioProperty(xmlAttribute = "text", category = GENERAL, type = StudioPropertyType.LOCALIZED_STRING),
             @StudioProperty(xmlAttribute = "view", category = GENERAL, type = StudioPropertyType.STRING),
             @StudioProperty(xmlAttribute = "visible", category = GENERAL, type = StudioPropertyType.BOOLEAN, defaultValue = "true")

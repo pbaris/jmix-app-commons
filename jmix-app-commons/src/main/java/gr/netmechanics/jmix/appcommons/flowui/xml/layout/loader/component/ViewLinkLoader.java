@@ -19,6 +19,7 @@ public class ViewLinkLoader extends AbstractComponentLoader<ViewLink> {
         componentLoader().loadClassNames(resultComponent, element);
         componentLoader().loadIcon(element, resultComponent::setIcon);
 
+        getLoaderSupport().loadString(element, "size", resultComponent::setSize);
         getLoaderSupport().loadResourceString(element, "text", context.getMessageGroup(), resultComponent::setText);
         getLoaderSupport().loadString(element, "view", resultComponent::setViewId);
     }

@@ -14,6 +14,7 @@ import io.jmix.flowui.view.View;
 import io.jmix.flowui.view.ViewController;
 import io.jmix.flowui.view.ViewInfo;
 import io.jmix.flowui.view.ViewRegistry;
+import lombok.Setter;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
@@ -29,6 +30,8 @@ public class ViewLink extends Composite<RouterLink> implements ApplicationContex
     private ViewRegistry viewRegistry;
 
     private final HorizontalLayout layout = new HorizontalLayout();
+
+    @Setter private String size = "1em";
 
     @Override
     protected RouterLink initContent() {
@@ -81,7 +84,7 @@ public class ViewLink extends Composite<RouterLink> implements ApplicationContex
             }
 
             if (icon instanceof Icon ic) {
-                ic.setSize("1em");
+                ic.setSize(size);
             }
 
             layout.addComponentAsFirst(icon);
