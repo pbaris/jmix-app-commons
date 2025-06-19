@@ -17,6 +17,8 @@ public class UiUtils {
     }
 
     public static void fixInputDialogResponsiveUI(final InputDialog inputDialog, final String maxWidth) {
+        //TODO check if we can use UiComponentUtils.findDialog()
+
         Component parent = inputDialog.getParent().orElse(null);
         while (parent != null && !(parent instanceof Dialog)) {
             parent = parent.getParent().orElse(null);

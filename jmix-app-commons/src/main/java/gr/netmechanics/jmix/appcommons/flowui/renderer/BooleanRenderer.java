@@ -18,7 +18,7 @@ public class BooleanRenderer<S> extends ComponentRenderer<Component, S> {
     private final ValueProvider<S, Boolean> valueProvider;
     private final boolean allowNull;
 
-    public BooleanRenderer(final ValueProvider<S, Boolean> valueProvider, boolean allowNull) {
+    public BooleanRenderer(final ValueProvider<S, Boolean> valueProvider, final boolean allowNull) {
         super((SerializableSupplier<Component>) null);
         this.valueProvider = valueProvider;
         this.allowNull = allowNull;
