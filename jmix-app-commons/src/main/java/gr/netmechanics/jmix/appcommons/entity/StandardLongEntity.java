@@ -1,7 +1,6 @@
 package gr.netmechanics.jmix.appcommons.entity;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.metamodel.annotation.JmixEntity;
@@ -21,13 +20,13 @@ import org.springframework.data.annotation.LastModifiedDate;
  */
 @Getter
 @Setter
-@JmixEntity(name = "jac_StandardEntity")
+@JmixEntity(name = "jac_StandardLongEntity")
 @MappedSuperclass
-public class StandardEntity {
+public class StandardLongEntity {
     @Id
     @JmixGeneratedValue
     @Column(name = "ID", nullable = false)
-    private UUID id;
+    private Long id;
 
     @Version
     @Column(name = "VERSION", nullable = false)
@@ -48,5 +47,4 @@ public class StandardEntity {
     @LastModifiedDate
     @Column(name = "LAST_MODIFIED_DATE")
     private LocalDateTime lastModifiedDate;
-
 }
