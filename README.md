@@ -8,9 +8,10 @@ It aims to streamline development by offering reusable modules that can be integ
 
 The following table shows which version of the add-on is compatible with which version of the platform:
 
-| Jmix Version | Add-on Version | Implementation                                      |
-|--------------|----------------|-----------------------------------------------------|
-| 1.0.*        | 2.5.1          | gr.netmechanics.jmix:jmix-app-commons-starter:1.0.0 |
+| Jmix Version | Add-on Version | Implementation                                       |
+|--------------|----------------|------------------------------------------------------|
+| 1.2.14       | 2.5.2          | gr.netmechanics.jmix:jmix-app-commons-starter:1.2.14 |
+| 1.3.0        | 2.6.0          | gr.netmechanics.jmix:jmix-app-commons-starter:1.3.0  |
 
 Add to your project's `build.gradle` the repository:
 
