@@ -23,7 +23,7 @@ maven {
 Add to your project's `build.gradle` dependencies:
 
 ```gradle
-implementation 'gr.netmechanics.jmix:azurefs-starter:<addon-version>'
+implementation 'gr.netmechanics.jmix:jmix-app-commons-starter:<addon-version>'
 ```
 
 ## Usage
