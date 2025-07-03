@@ -100,14 +100,9 @@
             <div class="mr-4 hidden md:flex">
                 <a href="/" class="mr-4 flex items-center gap-2 lg:mr-6">
                     
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
-    class="h-6 w-6">
-    <rect width="256" height="256" fill="none"></rect>
-    <line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="32"></line>
-    <line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="32"></line>
-</svg>
+
+<iconify-icon icon="heroicons:rocket-launch" noobserver></iconify-icon>
+
 
                     <h1 class="hidden lg:inline-block font-bold text-md">
                         
@@ -280,13 +275,14 @@
 </tbody>
 </table>
 <p>Add to your project's <code>build.gradle</code> the repository:</p>
-<pre><code class="language-gradle">maven {
-    url = 'https://nexus.nmlabs.gr/repository/m2public/'
+<div class="codehilite"><pre><span></span><code>maven {
+    url = &#39;https://nexus.nmlabs.gr/repository/m2public/&#39;
 }
-</code></pre>
+</code></pre></div>
+
 <p>Add to your project's <code>build.gradle</code> dependencies:</p>
-<pre><code class="language-gradle">implementation 'gr.netmechanics.jmix:jmix-app-commons-starter:&lt;addon-version&gt;'
-</code></pre>
+<div class="codehilite"><pre><span></span><code><span class="nx">implementation</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">gr</span><span class="p">.</span><span class="nx">netmechanics</span><span class="p">.</span><span class="nx">jmix</span><span class="p">:</span><span class="nx">jmix</span><span class="o">-</span><span class="nx">app</span><span class="o">-</span><span class="nx">commons</span><span class="o">-</span><span class="nx">starter</span><span class="p">:&lt;</span><span class="nx">addon</span><span class="o">-</span><span class="nx">version</span><span class="p">&gt;</span><span class="err">&#39;</span>
+</code></pre></div>
 </article>
                         </div>
                         <div class="hidden text-sm xl:block">
