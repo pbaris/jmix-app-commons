@@ -25,9 +25,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs
-          pip install mkdocs-material  # Required if you're using the Material theme
-          pip install mkdocs-git-revision-date-localized-plugin  # Example for any custom plugins (optional)
-          pip install mkdocs-plantuml # For plantUML
+          pip install mkdocs-gitbook 
+          pip install mkdocs-git-revision-date-localized-plugin 
+          pip install mkdocs-plantuml
           pip install markdown-inline-graphviz
           pip install mkdocs-kroki-plugin
           pip install mkdocs-build-plantuml-plugin
