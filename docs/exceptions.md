@@ -1,5 +1,3 @@
-# Exceptions
-
 ## OnDeleteInverseDenyExceptionHandler
 <!-- md:version 1.0.0 -->
 
