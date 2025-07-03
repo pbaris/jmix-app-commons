@@ -100,7 +100,7 @@ def setting(type: str):
 # one additional level of `..` which we need to remove
 def _resolve_path(path: str, page: Page, files: Files):
     path, anchor, *_ = f"{path}#".split("#")
-	print(files)
+    print(files)
     path = _resolve(files.get_file_from_path(path), page)
     return "#".join([path, anchor]) if anchor else path
 
