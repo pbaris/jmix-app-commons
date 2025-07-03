@@ -93,3 +93,6 @@ nav:
   - Data Types: datatypes.md
   - Exceptions: exceptions.md
   - Utils: utils.md
+  - Conventions: conventions.md
+  - Changelog:
+    - changelog/index.md
