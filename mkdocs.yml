@@ -30,13 +30,12 @@ theme:
 plugins:
   - search:
       lang: en
-      indexing: 'full'
   - glightbox
   - git-revision-date-localized
 
 # Hooks
 hooks:
-  - material/overrides/hooks/shortcodes.py
+  - mkdocs/hooks/shortcodes.py
 
 # Additional configuration
 extra:
