@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../datatypes/">
       
-        <link rel="next" href="entities/">
+      
+        <link rel="next" href="../utils/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Jmix AppCommons</title>
+        <title>Exceptions - Jmix AppCommons</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,14 +46,14 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -60,7 +62,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -77,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jmix_appcommons_documentation" class="md-skip">
+        <a href="#exceptions" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +95,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Jmix AppCommons" class="md-header__button md-logo" aria-label="Jmix AppCommons" data-md-component="logo">
+    <a href=".." title="Jmix AppCommons" class="md-header__button md-logo" aria-label="Jmix AppCommons" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -113,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Exceptions
             
           </span>
         </div>
@@ -205,7 +207,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Jmix AppCommons" class="md-nav__button md-logo" aria-label="Jmix AppCommons" data-md-component="logo">
+    <a href=".." title="Jmix AppCommons" class="md-nav__button md-logo" aria-label="Jmix AppCommons" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -232,6 +234,138 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Entities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../views/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Views
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Components
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../renderers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Renderers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datatypes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -247,7 +381,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    Exceptions
     
   </span>
   
@@ -255,12 +389,12 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
-    Home
+    Exceptions
     
   </span>
   
@@ -281,19 +415,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jmix_appcommons_documentation" class="md-nav__link">
+  <a href="#exceptions" class="md-nav__link">
     <span class="md-ellipsis">
-      Jmix AppCommons Documentation
+      Exceptions
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Jmix AppCommons Documentation">
+    <nav class="md-nav" aria-label="Exceptions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#ondeleteinversedenyexceptionhandler" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      OnDeleteInverseDenyExceptionHandler
     </span>
   </a>
   
@@ -319,139 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="entities/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Entities
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="views/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Views
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="components/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Components
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="renderers/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Renderers
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="datatypes/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Data Types
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="exceptions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Exceptions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="utils/" class="md-nav__link">
+      <a href="../utils/" class="md-nav__link">
         
   
   
@@ -491,19 +493,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#jmix_appcommons_documentation" class="md-nav__link">
+  <a href="#exceptions" class="md-nav__link">
     <span class="md-ellipsis">
-      Jmix AppCommons Documentation
+      Exceptions
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Jmix AppCommons Documentation">
+    <nav class="md-nav" aria-label="Exceptions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#ondeleteinversedenyexceptionhandler" class="md-nav__link">
     <span class="md-ellipsis">
-      Installation
+      OnDeleteInverseDenyExceptionHandler
     </span>
   </a>
   
@@ -533,41 +535,18 @@
   
 
 
-  <h1>Home</h1>
+  <h1>Exceptions</h1>
 
-<h2 id="jmix_appcommons_documentation">Jmix AppCommons Documentation<a class="headerlink" href="#jmix_appcommons_documentation" title="Permanent link">#</a></h2>
-<p>This add-on provides common utilities and components for applications built with the Jmix framework.</p>
-<p>It aims to streamline development by offering reusable modules that can be integrated into various Jmix applications.</p>
-<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h3>
-<p>The following table shows which version of the add-on is compatible with which version of the platform:</p>
-<table>
-<thead>
-<tr>
-<th>Jmix Version</th>
-<th>Add-on Version</th>
-<th>Implementation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.2.14</td>
-<td>2.5.2</td>
-<td>gr.netmechanics.jmix:jmix-app-commons-starter:1.2.14</td>
-</tr>
-<tr>
-<td>1.3.0</td>
-<td>2.6.0</td>
-<td>gr.netmechanics.jmix:jmix-app-commons-starter:1.3.0</td>
-</tr>
-</tbody>
-</table>
-<p>Add to your project's <code>build.gradle</code> the repository:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>maven {
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    url = &#39;https://nexus.nmlabs.gr/repository/m2public/&#39;
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>}
+<h2 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permanent link">#</a></h2>
+<h3 id="ondeleteinversedenyexceptionhandler">OnDeleteInverseDenyExceptionHandler<a class="headerlink" href="#ondeleteinversedenyexceptionhandler" title="Permanent link">#</a></h3>
+<!-- md:version 1.0.0 -->
+
+<p>An application-level exception handler designed to catch and handle <strong>"on delete inverse deny"</strong> errors, typically triggered when attempting to delete an entity that is still referenced by other entities with restrictive delete policies.</p>
+<p>You can modify the message that is shown to the user in response to the error. The message is set in the message bundle with the key in the <code>databaseDeleteConstraintViolation.&lt;FOREIGN_KEY_NAME&gt;</code> format, for example:</p>
+<div class="language-properties highlight"><span class="filename">messages_en.properties</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="na">databaseDeleteConstraintViolation.FK_NMCR_VEHICLE_ON_MODEL</span><span class="o">=</span><span class="s">Cannot delete the vehicle model because it is still used by some vehicles.</span>
 </span></code></pre></div>
-<p>Add to your project's <code>build.gradle</code> dependencies:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>implementation &#39;gr.netmechanics.jmix:jmix-app-commons-starter:&lt;addon-version&gt;&#39;
+<p>The handler is enabled by default. You can disable it by setting the property <code>jmix.appcommons.on-delete-inverse-deny-exception-handler.enabled</code> to false.</p>
+<div class="language-properties highlight"><span class="filename">application.properties</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="na">jmix.appcommons.on-delete-inverse-deny-exception-handler.enabled</span><span class="o">=</span><span class="s">false</span>
 </span></code></pre></div>
 
 
@@ -699,10 +678,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.footnote.tooltips", "content.tooltips"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "content.footnote.tooltips", "content.code.copy", "content.code.select", "content.code.annotate", "content.tabs.link", "content.footnote.tooltips", "content.tooltips"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
