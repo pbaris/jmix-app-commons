@@ -13,7 +13,7 @@ theme:
   highlightjs: true
   locale: en
   user_color_mode_toggle: true
-  icon: heroicons:rocket-launch
+  icon: heroicons:document-text
   color_mode: light
   shortcuts:
     help: 191    # ?
