@@ -31,11 +31,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home - Jmix AppCommons</title>
+    <title>Entities - Jmix AppCommons</title>
     
 
 
-<title>Home</title>
+<title>Entities</title>
 
 
 
@@ -48,7 +48,7 @@
 
 <!-- Open Graph (Facebook, LinkedIn) -->
 
-<meta property="og:title" content="Home">
+<meta property="og:title" content="Entities">
 
 
 
@@ -61,7 +61,7 @@
 
 <!-- Twitter Card -->
 
-<meta name="twitter:title" content="Home">
+<meta name="twitter:title" content="Entities">
 
 
 
@@ -72,14 +72,14 @@
 
 
 
-    <link rel="icon" href="img/favicon.ico">
-    <link href="css/base.css" rel="stylesheet">
-    <link href="css/geist.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/geist.css" rel="stylesheet">
     
-    <link href="css/pygments/dracula.css" rel="stylesheet">
+    <link href="../css/pygments/dracula.css" rel="stylesheet">
     
 
-    <script src="js/callbacks.js"></script>
+    <script src="../js/callbacks.js"></script>
 
     
 
@@ -245,7 +245,7 @@
 
     
     
-    <a href="." data-active 
+    <a href=".." 
     class="text-sm flex shrink-0 h-8 w-full items-center rounded-lg px-2 text-foreground underline-offset-2 font-normal hover:bg-accent hover:text-accent-foreground data-active:bg-accent data-active:font-medium data-active:text-accent-foreground">
     
     Home
@@ -260,7 +260,7 @@
     
     
     
-    <a href="entities/" 
+    <a href="./" data-active 
     class="text-sm flex shrink-0 h-8 w-full items-center rounded-lg px-2 text-foreground underline-offset-2 font-normal hover:bg-accent hover:text-accent-foreground data-active:bg-accent data-active:font-medium data-active:text-accent-foreground">
     
     Entities
@@ -286,41 +286,15 @@
     
     
     
-    <h2 id="jmix_appcommons_documentation">Jmix AppCommons Documentation<a class="headerlink" href="#jmix_appcommons_documentation" title="Permanent link">#</a></h2>
-<p>This add-on provides common utilities and components for applications built with the Jmix framework.</p>
-<p>It aims to streamline development by offering reusable modules that can be integrated into various Jmix applications.</p>
-<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h3>
-<p>The following table shows which version of the add-on is compatible with which version of the platform:</p>
-<table>
-<thead>
-<tr>
-<th>Jmix Version</th>
-<th>Add-on Version</th>
-<th>Implementation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1.2.14</td>
-<td>2.5.2</td>
-<td>gr.netmechanics.jmix:jmix-app-commons-starter:1.2.14</td>
-</tr>
-<tr>
-<td>1.3.0</td>
-<td>2.6.0</td>
-<td>gr.netmechanics.jmix:jmix-app-commons-starter:1.3.0</td>
-</tr>
-</tbody>
-</table>
-<p>Add to your project's <code>build.gradle</code> the repository:</p>
-<div class="codehilite"><pre><span></span><code>maven {
-    url = &#39;https://nexus.nmlabs.gr/repository/m2public/&#39;
-}
-</code></pre></div>
-
-<p>Add to your project's <code>build.gradle</code> dependencies:</p>
-<div class="codehilite"><pre><span></span><code><span class="nx">implementation</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">gr</span><span class="p">.</span><span class="nx">netmechanics</span><span class="p">.</span><span class="nx">jmix</span><span class="p">:</span><span class="nx">jmix</span><span class="o">-</span><span class="nx">app</span><span class="o">-</span><span class="nx">commons</span><span class="o">-</span><span class="nx">starter</span><span class="p">:&lt;</span><span class="nx">addon</span><span class="o">-</span><span class="nx">version</span><span class="p">&gt;</span><span class="err">&#39;</span>
-</code></pre></div>
+    <h2 id="entities">Entities<a class="headerlink" href="#entities" title="Permanent link">#</a></h2>
+<h3 id="standardentity">StandardEntity<a class="headerlink" href="#standardentity" title="Permanent link">#</a></h3>
+<p><code>@since 1.0.0</code></p>
+<p>A <code>@MappedSuperclass</code> that can serve as the base class for other entities, providing common fields and mappings.</p>
+<p>It leverages Jmix’s Has UUID Trait, Versioned Trait, and Audit Traits to provide the extended entity with UUID identification, versioning, and auditing capabilities.</p>
+<div class="admonition warning">
+<p class="admonition-title">Caution:</p>
+</div>
+<p>As a workaround for the known issue <a href="https://github.com/jmix-framework/jmix/issues/317" target="_blank">MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module</a>, a class named StandardEntityWorkaround has been implemented. However, this class must not be used and exists solely as a temporary technical measure. </p>
 </article>
                         </div>
                         <div class="hidden text-sm xl:block">
@@ -335,7 +309,7 @@
                 
                 <li class="mt-0 pt-2">
                     <a class="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground"
-                        href="#installation">Installation</a>
+                        href="#standardentity">StandardEntity</a>
                     
                 </li>
                 
@@ -363,7 +337,7 @@
             <div class="flex flex-col">
                 
                 
-                <a href="." class="text-base shrink-0">
+                <a href=".." class="text-base shrink-0">
     Home
 </a>
                 
@@ -374,7 +348,7 @@
             <div class="flex flex-col">
                 
                 
-                <a href="entities/" class="text-base shrink-0">
+                <a href="./" class="text-base shrink-0">
     Entities
 </a>
                 
@@ -388,10 +362,10 @@
         </div>
     </div> 
     
-    <script src="search/main.js"></script>
+    <script src="../search/main.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
-    <script src="js/copy-button.js"></script>
+    <script src="../js/copy-button.js"></script>
 </body>
 
 </html>
