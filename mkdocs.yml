@@ -25,6 +25,7 @@ theme:
     - content.tabs.link
     - content.footnote.tooltips
     - content.tooltips
+    - toc.follow
 
 # Plugins
 plugins:
