@@ -293,8 +293,28 @@
 <p>It leverages Jmix’s Has UUID Trait, Versioned Trait, and Audit Traits to provide the extended entity with UUID identification, versioning, and auditing capabilities.</p>
 <div class="admonition warning">
 <p class="admonition-title">Caution:</p>
+<p>As a workaround for the known issue <a href="https://github.com/jmix-framework/jmix/issues/317" target="_blank">MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module</a>, a class named StandardEntityWorkaround has been implemented. However, this class must not be used and exists solely as a temporary technical measure.</p>
 </div>
-<p>As a workaround for the known issue <a href="https://github.com/jmix-framework/jmix/issues/317" target="_blank">MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module</a>, a class named StandardEntityWorkaround has been implemented. However, this class must not be used and exists solely as a temporary technical measure. </p>
+<h3 id="country">Country<a class="headerlink" href="#country" title="Permanent link">#</a></h3>
+<p><code>@since 1.0.0</code></p>
+<p>An enum that provides all 249 countries, including their corresponding <strong>ISO Alpha-2</strong>, <strong>ISO Alpha-3</strong> and <strong>ISO Numeric</strong> codes for each country.</p>
+<p>Can be used as a datatype in an entity and as a select field in the data views.</p>
+<div class="codehilite"><pre><span></span><code><span class="nd">@Column</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;COUNTRY&quot;</span><span class="p">)</span>
+<span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">country</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="n">Country</span><span class="w"> </span><span class="nf">getCountry</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">country</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Country</span><span class="p">.</span><span class="na">fromId</span><span class="p">(</span><span class="n">country</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setCountry</span><span class="p">(</span><span class="kd">final</span><span class="w"> </span><span class="n">Country</span><span class="w"> </span><span class="n">country</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">country</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">country</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">country</span><span class="p">.</span><span class="na">getId</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;formLayout</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;form&quot;</span><span class="w"> </span><span class="na">dataContainer=</span><span class="s">&quot;theDc&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;select</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;countryField&quot;</span><span class="w"> </span><span class="na">property=</span><span class="s">&quot;country&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/formLayout&gt;</span>
+</code></pre></div>
 </article>
                         </div>
                         <div class="hidden text-sm xl:block">
@@ -310,6 +330,12 @@
                 <li class="mt-0 pt-2">
                     <a class="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground"
                         href="#standardentity">StandardEntity</a>
+                    
+                </li>
+                
+                <li class="mt-0 pt-2">
+                    <a class="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground"
+                        href="#country">Country</a>
                     
                 </li>
                 
