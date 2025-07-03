@@ -1,19 +1,54 @@
 site_name: Jmix AppCommons
 repo_url: https://github.com/pbaris/jmix-app-commons
-copyright: Panos Bariamis
+copyright: Copyright &copy; Panos Bariamis
 
 validation:
   omitted_files: warn
-  absolute_links: warn  # Or 'relative_to_docs' - new in MkDocs 1.6
+  absolute_links: warn
   unrecognized_links: warn
   anchors: warn
 
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.blocks.caption
+  - toc:
+      permalink: "#"
+      baselevel: 2
+      separator: "_"
+
 theme:
-  name: shadcn
-  highlightjs: true
-  locale: en
+  name: material
+  language: en
+  palette:
+    primary: blue grey
+  features:
+    - search.suggest
+    - search.highlight
+    - content.footnote.tooltips
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
+    - content.footnote.tooltips
+    - content.tooltips
   user_color_mode_toggle: true
-  icon: heroicons:document-text
   color_mode: light
   shortcuts:
     help: 191    # ?
@@ -21,34 +56,31 @@ theme:
     previous: 80 # p
     search: 83   # s
 
+extra:
+  generator: false
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+#  analytics:
+#    provider: google
+#    property: G-XXXXXXXXXX
+
 plugins:
   - search:
       indexing: 'full'
-
-  - kroki:
-      ServerURL: !ENV [ KROKI_SERVER_URL, 'https://kroki.nmlabs.gr' ]
-      EnableBpmn: true
-      EnableMermaid: true
-      FileTypes:
-        - png
-        - svg
-      FileTypeOverrides:
-        mermaid: png
-
-markdown_extensions:
-  - admonition
-  - attr_list
-  - codehilite
-  - fenced_code
-  - pymdownx.blocks.tab
-  - abbr
-  - def_list
-  - nl2br
-  - toc:
-      permalink: "#"
-      baselevel: 2
-      separator: "_"
+  - glightbox
+  - git-revision-date-localized
 
 nav:
   - Home: index.md
   - Entities: entities.md
+  - Views: views.md
+  - Components: components.md
+  - Renderers: renderers.md
+  - Data Types: datatypes.md
+  - Exceptions: exceptions.md
+  - Utils: utils.md

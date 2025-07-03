@@ -1,10 +1,3 @@
----
-authors:
-- Panos Bariamis
-
-date: 2025-05-20
----
-
 # Jmix AppCommons Documentation
 
 This add-on provides common utilities and components for applications built with the Jmix framework.
