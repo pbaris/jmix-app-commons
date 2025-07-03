@@ -35,8 +35,8 @@ plugins:
   - git-revision-date-localized
 
 # Hooks
-hooks:
-  - mkdocs/hooks/shortcodes.py
+#hooks:
+#  - mkdocs/hooks/shortcodes.py
 
 # Additional configuration
 extra:
