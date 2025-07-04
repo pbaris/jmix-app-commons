@@ -115,5 +115,4 @@ nav:
   - Exceptions: exceptions.md
   - Utils: utils.md
   - Conventions: conventions.md
-  - Changelog:
-    - changelog/index.md
+  - Changelog: changelog/index.md

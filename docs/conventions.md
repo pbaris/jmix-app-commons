@@ -90,5 +90,3 @@ added by the author.
 Besides plugins, there are some utilities that build on top of MkDocs in order
 to provide extended functionality, like for example support for versioning.
 
-  [Insiders]: insiders/index.md
-
