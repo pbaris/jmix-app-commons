@@ -59,7 +59,6 @@ plugins:
   - git-committers:
       repository: pbaris/jmix-app-commons
       branch: master
-  - git-authors
 
 # Hooks
 hooks:
