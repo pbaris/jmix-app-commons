@@ -8,7 +8,7 @@ repo_name: pbaris/jmix-app-commons
 repo_url: https://github.com/pbaris/jmix-app-commons
 
 # Copyright
-copyright: Copyright &copy; 2025 Panos Bariamis
+copyright: &copy; 2025 Panos Bariamis
 
 # Configuration
 theme:
@@ -106,6 +106,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.caption
   - pymdownx.smartsymbols
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: pbaris
+      repo: jmix-app-commons
 
 # Navigation
 nav:
