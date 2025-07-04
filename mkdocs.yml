@@ -46,6 +46,8 @@ theme:
     - content.footnote.tooltips
     - content.tooltips
     - toc.follow
+    - navigation.top
+    - navigation.path
 
 # Plugins
 plugins:
