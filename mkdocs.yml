@@ -8,7 +8,7 @@ repo_name: pbaris/jmix-app-commons
 repo_url: https://github.com/pbaris/jmix-app-commons
 
 # Copyright
-copyright: &copy; 2025 Panos Bariamis
+copyright: Copyright &copy; 2025 Panos Bariamis
 
 # Configuration
 theme:
