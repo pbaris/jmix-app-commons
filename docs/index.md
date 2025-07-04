@@ -1,3 +1,7 @@
+---
+description: This add-on provides common utilities and components for applications built with the Jmix framework.
+---
+
 # Jmix AppCommons
 
 This add-on provides common utilities and components for applications built with the Jmix framework.
