@@ -48,6 +48,9 @@ theme:
     - toc.follow
     - navigation.top
     - navigation.path
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.instant.preview
 
 # Plugins
 plugins:
