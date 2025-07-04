@@ -106,11 +106,12 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.caption
   - pymdownx.smartsymbols
-  - pymdownx.magiclink:
-      normalize_issue_symbols: true
-      repo_url_shorthand: true
-      user: pbaris
-      repo: jmix-app-commons
+  - material.extensions.preview:
+      configurations:
+        - targets:
+            include:
+              - changelog/index.md
+              - customization.md
 
 # Navigation
 nav:
