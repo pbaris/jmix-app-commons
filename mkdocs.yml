@@ -47,10 +47,8 @@ theme:
     - content.tooltips
     - toc.follow
     - navigation.top
-    - navigation.path
     - navigation.tracking
     - navigation.tabs
-    - navigation.instant.preview
 
 # Plugins
 plugins:
@@ -111,12 +109,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.blocks.caption
   - pymdownx.smartsymbols
-  - material.extensions.preview:
-      configurations:
-        - targets:
-            include:
-              - changelog/index.md
-              - customization.md
 
 # Navigation
 nav:
