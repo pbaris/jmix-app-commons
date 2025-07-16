@@ -32,7 +32,7 @@ public class JsonUtil {
      */
     public static <T> Optional<String> toJson(final T obj) {
         try {
-            return Optional.of(MAPPER.writeValueAsString(obj));
+            return Optional.ofNullable(MAPPER.writeValueAsString(obj));
 
         } catch (Exception e) {
             log.warn("Failed to serialize object to JSON: {}", obj, e);
@@ -50,7 +50,7 @@ public class JsonUtil {
      */
     public static <T> Optional<T> fromJson(final String json, final Class<T> objClass) {
         try {
-            return Optional.of(MAPPER.readValue(json, objClass));
+            return Optional.ofNullable(MAPPER.readValue(json, objClass));
 
         } catch (Exception e) {
             log.warn("Failed to deserialize JSON to {}: {}", objClass.getName(), json, e);
@@ -68,7 +68,7 @@ public class JsonUtil {
      */
     public static <T> Optional<T> fromJson(final String json, final TypeReference<T> typeReference) {
         try {
-            return Optional.of(MAPPER.readValue(json, typeReference));
+            return Optional.ofNullable(MAPPER.readValue(json, typeReference));
 
         } catch (Exception e) {
             log.warn("Failed to deserialize JSON to {}: {}", typeReference.getType(), json, e);
