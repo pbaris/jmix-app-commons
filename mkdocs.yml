@@ -48,6 +48,9 @@ theme:
     - toc.follow
     - navigation.top
     - navigation.tracking
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
 
 # Plugins
 plugins:
@@ -116,13 +119,17 @@ markdown_extensions:
 
 # Navigation
 nav:
-  - Home: index.md
-  - Entities: entities.md
-  - Views: views.md
-  - Components: components.md
-  - Renderers: renderers.md
-  - Data Types: datatypes.md
-  - Exceptions: exceptions.md
-  - Utils: utils.md
-  - Conventions: conventions.md
-  - Changelog: changelog/index.md
+  - Home:
+    - home/index.md
+    - Conventions: conventions.md
+    - Changelog: changelog/index.md
+  - Data:
+    - Entities: entities.md
+    - Data Types: datatypes.md
+  - UI:
+    - Views: views.md
+    - Components: components.md
+    - Renderers: renderers.md
+  - Miscellaneous:
+    - Exceptions: exceptions.md
+    - Utils: utils.md
