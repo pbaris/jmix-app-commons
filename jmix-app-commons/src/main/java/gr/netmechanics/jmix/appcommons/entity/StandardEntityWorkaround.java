@@ -11,7 +11,7 @@ import jakarta.persistence.Entity;
  * See also issue: <a href="https://github.com/jmix-framework/jmix/issues/317">MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module</a>
  */
 @Entity
-@JmixEntity(name = "jac_StandardEntityWorkaround")
+@JmixEntity
 @SystemLevel
 @SuppressWarnings("all")
 class StandardEntityWorkaround extends StandardEntity {
