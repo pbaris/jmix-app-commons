@@ -1,4 +1,4 @@
-package gr.netmechanics.jmix.appcommons.flowui.kit;
+package gr.netmechanics.jmix.appcommons.kit;
 
 import static io.jmix.flowui.kit.meta.StudioProperty.Category.GENERAL;
 import static io.jmix.flowui.kit.meta.StudioProperty.Category.LOOK_AND_FEEL;

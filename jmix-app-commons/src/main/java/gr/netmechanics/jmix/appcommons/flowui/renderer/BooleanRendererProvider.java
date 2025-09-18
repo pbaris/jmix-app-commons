@@ -1,6 +1,5 @@
-package gr.netmechanics.jmix.appcommons.flowui.xml.layout.loader.component.datagrid;
+package gr.netmechanics.jmix.appcommons.flowui.renderer;
 
-import gr.netmechanics.jmix.appcommons.flowui.renderer.BooleanRenderer;
 import io.jmix.core.entity.EntityValues;
 import io.jmix.core.metamodel.model.MetaPropertyPath;
 import io.jmix.flowui.xml.layout.ComponentLoader;

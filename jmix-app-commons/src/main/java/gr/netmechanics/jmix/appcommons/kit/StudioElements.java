@@ -1,4 +1,4 @@
-package gr.netmechanics.jmix.appcommons.flowui.kit;
+package gr.netmechanics.jmix.appcommons.kit;
 
 import io.jmix.flowui.kit.meta.StudioElement;
 import io.jmix.flowui.kit.meta.StudioUiKit;

@@ -1,7 +1,7 @@
 package gr.netmechanics.jmix.appcommons;
 
 import gr.netmechanics.jmix.appcommons.flowui.component.ViewLink;
-import gr.netmechanics.jmix.appcommons.flowui.xml.layout.loader.component.ViewLinkLoader;
+import gr.netmechanics.jmix.appcommons.flowui.component.ViewLinkLoader;
 import io.jmix.core.annotation.JmixModule;
 import io.jmix.core.annotation.MessageSourceBasenames;
 import io.jmix.eclipselink.EclipselinkConfiguration;

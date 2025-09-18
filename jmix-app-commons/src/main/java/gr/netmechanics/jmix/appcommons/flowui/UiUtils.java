@@ -1,4 +1,4 @@
-package gr.netmechanics.jmix.appcommons.flowui.kit;
+package gr.netmechanics.jmix.appcommons.flowui;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.dialog.Dialog;

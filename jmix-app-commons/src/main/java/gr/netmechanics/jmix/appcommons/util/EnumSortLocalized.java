@@ -1,4 +1,4 @@
-package gr.netmechanics.jmix.appcommons.metamodel.datatype;
+package gr.netmechanics.jmix.appcommons.util;
 
 import java.util.function.BiFunction;
 

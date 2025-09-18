@@ -2,7 +2,7 @@ package gr.netmechanics.jmix.appcommons.entity;
 
 import java.util.function.BiFunction;
 
-import gr.netmechanics.jmix.appcommons.metamodel.datatype.EnumSortLocalized;
+import gr.netmechanics.jmix.appcommons.util.EnumSortLocalized;
 import io.jmix.core.Messages;
 import io.jmix.core.metamodel.datatype.EnumClass;
 import lombok.Getter;

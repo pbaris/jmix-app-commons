@@ -1,6 +1,5 @@
-package gr.netmechanics.jmix.appcommons.flowui.xml.layout.loader.component;
+package gr.netmechanics.jmix.appcommons.flowui.component;
 
-import gr.netmechanics.jmix.appcommons.flowui.component.ViewLink;
 import io.jmix.flowui.xml.layout.loader.AbstractComponentLoader;
 import org.springframework.lang.NonNull;
 

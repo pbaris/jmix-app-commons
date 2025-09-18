@@ -1,7 +1,6 @@
-package gr.netmechanics.jmix.appcommons.flowui.xml.layout.loader.component.datagrid;
+package gr.netmechanics.jmix.appcommons.flowui.renderer;
 
 import gr.netmechanics.jmix.appcommons.entity.trait.HasTags;
-import gr.netmechanics.jmix.appcommons.flowui.renderer.TagsRenderer;
 import io.jmix.core.metamodel.model.MetaPropertyPath;
 import io.jmix.flowui.xml.layout.ComponentLoader;
 import io.jmix.flowui.xml.layout.loader.component.datagrid.RendererProvider;
