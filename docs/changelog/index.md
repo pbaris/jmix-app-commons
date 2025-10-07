@@ -1,3 +1,7 @@
+### 1.4.1 <small>Oct 07, 2025</small> { id="1.4.1" }
+
+- Update to Jmix 2.6.2
+- 
 ### 1.4.0 <small>Sept 18, 2025</small> { id="1.4.0" }
 
 - Update to Jmix 2.6.1

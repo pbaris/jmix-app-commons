@@ -3,7 +3,7 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath 'io.jmix.gradle:jmix-gradle-plugin:2.6.1'
+        classpath 'io.jmix.gradle:jmix-gradle-plugin:2.6.2'
     }
 }
 
@@ -23,7 +23,7 @@ subprojects {
     }
 
     jmix {
-        bomVersion = '2.6.1'
+        bomVersion = '2.6.2'
         projectId = 'jac'
     }
 
