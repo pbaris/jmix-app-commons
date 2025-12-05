@@ -132,4 +132,5 @@ nav:
     - Renderers: renderers.md
   - Miscellaneous:
     - Exceptions: exceptions.md
+    - Validation: validation.md
     - Utils: utils.md
