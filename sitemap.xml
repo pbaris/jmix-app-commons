@@ -2,42 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/components/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/conventions/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/datatypes/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/entities/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/exceptions/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/renderers/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/utils/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
+    </url>
+    <url>
+         <loc>https://pbaris.github.io/jmix-app-commons/validation/</loc>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/views/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
     <url>
          <loc>https://pbaris.github.io/jmix-app-commons/changelog/</loc>
-         <lastmod>2025-11-06</lastmod>
+         <lastmod>2025-12-05</lastmod>
     </url>
 </urlset>
