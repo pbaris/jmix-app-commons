@@ -1,3 +1,5 @@
+[![GitHub Tag](https://img.shields.io/github/v/tag/pbaris/jmix-app-commons?sort=semver)](https://github.com/pbaris/jmix-app-commons/tags)
+
 # Jmix AppCommons
 
 This add-on provides common utilities and components for applications built with the Jmix framework. 
