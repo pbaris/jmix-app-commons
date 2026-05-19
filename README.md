@@ -1,4 +1,4 @@
-[![GitHub Tag](https://img.shields.io/github/v/tag/pbaris/jmix-app-commons?sort=semver)](https://github.com/pbaris/jmix-app-commons/tags)
+[![GitHub Tag](https://img.shields.io/github/v/version/pbaris/jmix-app-commons?sort=semver)](https://github.com/pbaris/jmix-app-commons/tags)
 
 # Jmix AppCommons
 
