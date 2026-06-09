@@ -1,3 +1,5 @@
+# Entities
+
 ## StandardEntity
 <!-- md:version 1.0.0 -->
 
@@ -7,6 +9,14 @@ It leverages Jmix’s Has UUID Trait, Versioned Trait, and Audit Traits to provi
 
 ???+ warning "Caution:"
     As a workaround for the known issue [MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module](https://github.com/jmix-framework/jmix/issues/317){: target="_blank" }, a class named `StandardEntityWorkaround` has been implemented. However, this class must not be used and exists solely as a temporary technical measure.
+
+## StandardLongEntity
+<!-- md:version 1.0.0 -->
+
+Similar to `StandardEntity`, but uses a `Long` type for the ID instead of a `UUID`. It also provides versioning and auditing capabilities.
+
+???+ warning "Caution:"
+    As a workaround for the known issue [MappedSuperclass is enhanced incorrectly if it has no Entity subclasses in the module](https://github.com/jmix-framework/jmix/issues/317){: target="_blank" }, a class named `StandardLongEntityWorkaround` has been implemented. However, this class must not be used and exists solely as a temporary technical measure.
 
 ## Country
 <!-- md:version 1.0.0 -->
@@ -32,4 +42,28 @@ public void setCountry(final Country country) {
 <formLayout id="form" dataContainer="theDc">
     <select id="countryField" property="country"/>
 </formLayout>
+```
+
+# Traits
+
+## HasListColumnLabel
+<!-- md:version 1.0.0 -->
+
+An interface that can be implemented by entities to provide a label for display in list columns, especially when using `AbstractListColumnRenderer`.
+
+```java
+public interface HasListColumnLabel {
+    String getListColumnLabel();
+}
+```
+
+## HasTags
+<!-- md:version 1.0.0 -->
+
+An interface that should be implemented by entities that have tags, which can then be rendered using the `TagsRenderer`.
+
+```java
+public interface HasTags {
+    Collection<String> getTagValues();
+}
 ```
