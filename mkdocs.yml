@@ -126,6 +126,7 @@ nav:
   - Data:
     - Entities: entities.md
     - Data Types: datatypes.md
+    - Traits: traits.md
   - UI:
     - Views: views.md
     - Components: components.md
