@@ -1,3 +1,7 @@
+### 1.6.1 <small>June 19, 2026</small> { id="1.6.1" }
+
+- Compile with jdk17
+
 ### 1.6.0 <small>May 26, 2026</small> { id="1.6.0" }
 
 - Update to Jmix 2.8.x
