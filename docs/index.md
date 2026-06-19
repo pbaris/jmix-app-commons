@@ -19,7 +19,7 @@ The following table shows which version of the add-on is compatible with which v
 | 2.6.1        | 1.4.0          | gr.netmechanics.jmix:jmix-app-commons-starter:1.4.0  |
 | 2.6.2        | 1.4.1          | gr.netmechanics.jmix:jmix-app-commons-starter:1.4.1  |
 | 2.7.x        | 1.5.0          | gr.netmechanics.jmix:jmix-app-commons-starter:1.5.0  |
-| 2.8.x        | 1.6.0          | gr.netmechanics.jmix:jmix-app-commons-starter:1.6.0  |
+| 2.8.x        | 1.6.1          | gr.netmechanics.jmix:jmix-app-commons-starter:1.6.1  |
 
 Add to your project's `build.gradle` the repository:
 
