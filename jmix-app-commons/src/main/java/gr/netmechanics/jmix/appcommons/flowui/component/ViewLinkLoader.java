@@ -1,12 +1,16 @@
 package gr.netmechanics.jmix.appcommons.flowui.component;
 
 import io.jmix.flowui.xml.layout.loader.AbstractComponentLoader;
+import io.jmix.flowui.xml.layout.support.IconLoaderSupport;
 import org.springframework.lang.NonNull;
 
 /**
  * @author Panos Bariamis (pbaris)
  */
 public class ViewLinkLoader extends AbstractComponentLoader<ViewLink> {
+
+    private IconLoaderSupport iconLoaderSupport;
+
     @Override
     @NonNull
     protected ViewLink createComponent() {
@@ -20,6 +24,14 @@ public class ViewLinkLoader extends AbstractComponentLoader<ViewLink> {
         getLoaderSupport().loadString(element, "view", resultComponent::setViewId);
 
         componentLoader().loadClassNames(resultComponent, element);
-        componentLoader().loadIcon(element, resultComponent::setIcon);
+        iconLoaderSupport().loadIcon(element, resultComponent::setIcon);
+    }
+
+    protected IconLoaderSupport iconLoaderSupport() {
+        if (iconLoaderSupport == null) {
+            iconLoaderSupport = applicationContext.getBean(IconLoaderSupport.class, context);
+        }
+
+        return iconLoaderSupport;
     }
 }
