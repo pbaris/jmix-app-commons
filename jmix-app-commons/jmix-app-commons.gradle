@@ -1,4 +1,6 @@
-archivesBaseName = 'jmix-app-commons'
+base {
+    archivesName = 'jmix-app-commons'
+}
 
 dependencies {
     implementation 'io.jmix.core:jmix-core-starter'
@@ -8,10 +10,10 @@ dependencies {
 
     compileOnly 'io.jmix.appsettings:jmix-appsettings-starter'
 
-    compileOnly 'org.projectlombok:lombok:1.18.38'
-    annotationProcessor 'org.projectlombok:lombok:1.18.38'
-    testCompileOnly 'org.projectlombok:lombok:1.18.38'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.38'
+    compileOnly 'org.projectlombok:lombok:1.18.46'
+    annotationProcessor 'org.projectlombok:lombok:1.18.46'
+    testCompileOnly 'org.projectlombok:lombok:1.18.46'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.46'
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'

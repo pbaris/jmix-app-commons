@@ -2,13 +2,12 @@ package gr.netmechanics.jmix.appcommons.util;
 
 import java.util.Optional;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import tools.jackson.core.type.TypeReference;
+import tools.jackson.databind.json.JsonMapper;
 
 /**
  * Utility class for JSON serialization and deserialization using Jackson.
@@ -18,11 +17,11 @@ import org.apache.commons.lang3.StringUtils;
 @Slf4j
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class JsonUtil {
-    private static final ObjectMapper MAPPER;
+    private static final JsonMapper MAPPER;
 
     static {
-        MAPPER = new ObjectMapper();
-        MAPPER.registerModule(new JavaTimeModule());
+        MAPPER = JsonMapper.builder()
+            .build();
     }
 
     /**

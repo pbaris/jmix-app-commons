@@ -6,11 +6,13 @@ import io.jmix.flowui.xml.layout.ComponentLoader;
 import io.jmix.flowui.xml.layout.loader.component.datagrid.RendererProvider;
 import io.jmix.flowui.xml.layout.support.LoaderSupport;
 import org.dom4j.Element;
+import org.jspecify.annotations.NullMarked;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Panos Bariamis (pbaris)
  */
+@NullMarked
 @Component("jac_BooleanRendererProvider")
 public class BooleanRendererProvider implements RendererProvider<BooleanRenderer<?>> {
     public static final String NAME = "booleanRenderer";
@@ -28,7 +30,7 @@ public class BooleanRendererProvider implements RendererProvider<BooleanRenderer
 
     @Override
     public BooleanRenderer<?> createRenderer(final Element element,
-                                            final MetaPropertyPath metaPropertyPath, final ComponentLoader.Context context) {
+                                             final MetaPropertyPath metaPropertyPath, final ComponentLoader.Context context) {
 
         Boolean allowNull = loaderSupport.loadBoolean(element, "allowNull").orElse(false);
         return new BooleanRenderer<>(item -> EntityValues.getValueEx(item, metaPropertyPath), allowNull);

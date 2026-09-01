@@ -1,4 +1,6 @@
-archivesBaseName = 'jmix-app-commons-starter'
+base {
+    archivesName = 'jmix-app-commons-starter'
+}
 
 jmix {
     entitiesEnhancing {

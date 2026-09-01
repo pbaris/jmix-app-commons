@@ -5,11 +5,13 @@ import io.jmix.core.metamodel.model.MetaPropertyPath;
 import io.jmix.flowui.xml.layout.ComponentLoader;
 import io.jmix.flowui.xml.layout.loader.component.datagrid.RendererProvider;
 import org.dom4j.Element;
+import org.jspecify.annotations.NullMarked;
 import org.springframework.stereotype.Component;
 
 /**
  * @author Panos Bariamis (pbaris)
  */
+@NullMarked
 @Component("jac_TagsRendererProvider")
 public class TagsRendererProvider implements RendererProvider<TagsRenderer<? extends HasTags>> {
 
