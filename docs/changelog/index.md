@@ -1,3 +1,7 @@
+### 3.1.0 <small>October 26, 2026</small> { id="3.1.0" }
+
+- Update to Jmix 3.1.x
+
 ### 3.0.0 <small>September 01, 2026</small> { id="3.0.0" }
 
 - Update to Jmix 3.0.x
